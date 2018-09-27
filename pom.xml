@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+
+  <!-- 父级 -->
+  <parent>
+    <groupId>com.vrv.cems</groupId>
+    <artifactId>CEMS-SERVICE</artifactId>
+    <version>1.0.2-SNAPSHOT</version>
+  </parent>
+
+  <!-- 自身信息 -->
+  <artifactId>CEMS-SERVICE-AMQ</artifactId>
+  <version>1.0.2018070600-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <!-- 描述信息 -->
+  <name>CEMS-SERVICE-AMQ</name>
+  <url>http://192.168.32.101:88/nexus/index.html#view-repositories;CEMS-Release~browseindex</url>
+  <description>CEMS-SERVICE-AMQ 消息队列服务</description>
+
+  <!-- 组织归属信息 -->
+  <organization>
+    <name>VRV</name>
+    <url>http://www.vrv.com.cn</url>
+  </organization>
+
+  <!-- 开发者信息 -->
+  <developers>
+    <developer>
+      <id>chenrui</id>
+      <name>chenrui</name>
+      <email>chenrui@vrvmail.com.cn</email>
+    </developer>
+  </developers>
+
+  <!-- 依赖类库管理(直接) -->
+  <dependencies>
+
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jms</artifactId>
+      <version>5.0.0.RELEASE</version>
+    </dependency>
+      <dependency>
+          <groupId>javax.jms</groupId>
+          <artifactId>javax.jms-api</artifactId>
+          <version>2.0</version>
+      </dependency>
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>activemq-all</artifactId>
+      <version>5.14.1</version>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

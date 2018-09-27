@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/vrv/cems/service/amq/AMQManager.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/vrv/cems/service/amq/exception/AMQSendException.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/vrv/cems/service/amq/factory/AMQReceiver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/vrv/cems/service/amq/factory/AMQSender.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/vrv/cems/service/amq/poolFactory/AMQPoolSender.java" charset="GBK" />
+  </component>
+</project>
